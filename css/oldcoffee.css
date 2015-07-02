@@ -1,0 +1,101 @@
+/* body elements */
+body {
+	background-color: rgb(240, 240, 240);
+	padding: 0;
+	margin: 0;
+}
+/* text styling */
+
+textarea {
+	color: #333;
+	font-family: "Noto Serif", serif;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight: 700;
+}
+
+
+h1 	{
+	font-family: "Noto Serif", serif;
+	font-size: 22px;
+	font-size: 2.2rem;
+	font-weight: 1000;
+	letter-spacing: 0.04em;
+}
+h2	{
+	font-family: "Noto Serif", serif;
+}
+h3 	{
+	font-family: "Noto Serif", serif;
+}
+h4 	{
+	font-family: "Noto Serif", serif;
+	margin: 0;
+	padding:4px;
+	
+}
+p 	{
+	font-family: "Noto Serif", serif;
+	/*font-size: 0.875em; /* 14px/16=0.875em */
+	font-size: 20px;
+	letter-spacing: 0.04em;
+	margin: 0;
+	padding: 5px;
+
+}
+#headercentre {
+    background-color:white;
+    height:75px;
+    width:1018px;
+	margin-top: 30px;
+	margin-left: auto;
+    margin-right: auto;
+    padding:5px;
+}
+
+/* grey line to separate page elements */
+.grayline {
+	background-color: rgb(240, 240, 240);
+    height:15px;
+    width:1024px;
+	margin-left: auto;
+    margin-right: auto;
+}
+/* text boxes - variable sizes */
+#text_before_map {
+    background-color:white;
+    height:200px;
+    width:976px;
+	padding-left:50px;
+	padding-top:5px;
+	margin-left: auto;
+    margin-right: auto;
+}
+#text_after_map {
+    background-color:white;
+    height:500px;
+    width:976px;
+	padding-left:50px;
+	padding-top:25px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* Google map div */
+ #coffee_map {
+    height:600px;
+    width:1024px;
+	margin-left: auto;
+    margin-right: auto;
+	padding:0;
+}
