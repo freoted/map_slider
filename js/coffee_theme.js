@@ -1,3 +1,5 @@
+/* test*/
+
 <script type="text/javascript">
 /* Place google map in train_map div */
      var map = new google.maps.Map(document.getElementById('coffee_map'), {
