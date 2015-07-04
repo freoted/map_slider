@@ -3,25 +3,13 @@ body {
 	background-color: rgb(240, 240, 240);
 	padding: 0;
 	margin: 0;
+	font-family: 'Noto', serif;
+	font-size: 22px;
+	color: #474747
 }
 /* text styling */
-
-textarea {
-	color: #333;
-	font-family: "Noto Serif", serif;
-	font-size: 15px;
-	font-size: 1.5rem;
-	line-height: 1.6;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-	font-weight: 700;
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Noto', serif;
 }
 
 
@@ -35,6 +23,15 @@ h6 {
     padding:5px;
 }
 
+/* link styling */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
 /* grey line to separate page elements */
 .grayline {
 	background-color: rgb(240, 240, 240);

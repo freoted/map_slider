@@ -1,7 +1,8 @@
 <!DOCTYPE html> 
 <html>
 <head>
-
+<!-- Link to Google fonts-->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto">
 <title>Coffee themed map using Google Maps API </title>
 <!-- Link to external style sheet for all pages in the site -->
 <link rel="stylesheet" type="text/css" href="css/coffee.css">
@@ -9,9 +10,7 @@
 <script type="text/javascript" 
  src="https://maps.googleapis.com/maps/api/js?"></script> 
 <!--  Loads external javascript file with list of perth cafes -->
-<script src="js/coffee_theme.js"></script>
 <script src="js/cafedata.js"></script>
-
 </head>
 
 <body>
@@ -27,24 +26,19 @@
 
 <!-- Text before the map -->
 <div id = "text_before_map">
-<h2> Coffee themed Google Map using Google Maps API</h2>
-<p> The styling in this theme is available for use under the Creative Commons Attribution licence. Scroll down to the text
-under the map for details about how it was created.</p></div>
+<h1> Custom 'coffee' base map in Google Maps API</h1>
+<p> The styling in this theme is available for use under the Creative Commons Attribution licence. Click <a href="http://www.bluedirtmaps.com/blog/google-maps-api-markers-and-base-map">here</a> to 
+return to the blog post and read how it was created.</p></div>
 
 <div class = "grayline">
 </div>
 
-<!-- Div to hold the Google Maps train map -->
+<!-- Div to hold the Google Maps coffee map -->
 <div id = "coffee_map" style="width: 1024px; height: 600px;">
 </div>
 
 <div class = "grayline">
 </div>
-
-<div id = "text_after_map">
-<p align="left">Sample text.</div> 
-
-<script src="js/coffee_theme.js">
-</script> 
+<script src="js/coffee_theme.js"></script>
 </body>
 </html>
