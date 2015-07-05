@@ -4,7 +4,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Noto', serif;
-	font-size: 22px;
+	font-size: 20px;
 	color: #474747
 }
 /* text styling */
@@ -44,9 +44,10 @@ a:visited {
 #text_before_map {
     background-color:white;
     height:200px;
-    width:976px;
+    width:956px;
 	padding-left:50px;
 	padding-top:5px;
+	padding-right:20px;
 	margin-left: auto;
     margin-right: auto;
 }
