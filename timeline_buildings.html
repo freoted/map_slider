@@ -3,12 +3,13 @@
 <head>
 <!-- Link to Google fonts-->
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto">
+<!-- Link to Leaflet css -->
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
 <title>Coffee themed map using Google Maps API </title>
 <!-- Link to external style sheet for all pages in the site -->
 <link rel="stylesheet" type="text/css" href="css/coffee.css">
-<!-- Loads Google Map API -->
-<script type="text/javascript" 
- src="https://maps.googleapis.com/maps/api/js?"></script> 
+<!-- Loads Leaflet API -->
+<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
 <!--  Loads external javascript file with list of perth cafes -->
 <script src="js/cafedata.js"></script>
 </head>
@@ -33,8 +34,8 @@ return to the blog post and read how it was created.</p></div>
 <div class = "grayline">
 </div>
 
-<!-- Div to hold the Google Maps coffee map -->
-<div id = "coffee_map" style="width: 1024px; height: 600px;">
+<!-- Div to hold the Leaflet map -->
+<div id = "map" style="width: 1024px; height: 600px;">
 </div>
 
 <div class = "grayline">
