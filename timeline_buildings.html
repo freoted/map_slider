@@ -5,13 +5,12 @@
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Noto">
 <!-- Link to Leaflet css -->
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-<title>Coffee themed map using Google Maps API </title>
+<title>History of William Street using OpenStreetMap </title>
 <!-- Link to external style sheet for all pages in the site -->
-<link rel="stylesheet" type="text/css" href="css/coffee.css">
+<link rel="stylesheet" type="text/css" href="css/timeline_buildings.css">
 <!-- Loads Leaflet API -->
 <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
-<!--  Loads external javascript file with list of perth cafes -->
-<script src="js/cafedata.js"></script>
+
 </head>
 
 <body>
@@ -27,9 +26,8 @@
 
 <!-- Text before the map -->
 <div id = "text_before_map">
-<h1> Custom 'coffee' base map in Google Maps API</h1>
-<p> This map shows the ten best places to buy a coffee in Perth, WA, as voted by users of <a href="http://www.beanhunter.com/australia/western-australia/perth">beanhunter.com</a>. Click <a href="http://www.bluedirtmaps.com/blog/google-maps-api-markers-and-base-map">here</a> to 
-return to the blog post and read how it was created.</p></div>
+<h1> History of William Street using OpenStreetMap</h1>
+<p> OpenStreetMap map, embedded in the webpage.</p></div>
 
 <div class = "grayline">
 </div>
@@ -40,6 +38,28 @@ return to the blog post and read how it was created.</p></div>
 
 <div class = "grayline">
 </div>
-<script src="js/coffee_theme.js"></script>
+<script>
+var map;
+<!-- var ajaxRequest; -->
+<!-- var plotlist;
+<!-- var plotlayers=[]; --> -->
+
+function initmap() {
+	// set up the map
+	map = new L.Map('map');
+
+	// create the tile layer with correct attribution
+	<!-- var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'; -->
+	var osmAttrib='&copy; <a href="http://osm.org/copyright" title="OpenStreetMap" target="_blank">OpenStreetMap</a> contributors | Tiles Courtesy of <a href="http://www.mapquest.com/" title="MapQuest" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png" width="16" height="16">';
+	var osm = new L.TileLayer('http://{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.png', 
+	{minZoom: 1, maxZoom: 19, osmAttrib,
+    subdomains: ['otile1','otile2','otile3','otile4']}).addTo( map );		
+
+	// start the map in Northbridge
+	map.setView(new L.LatLng(-31.949630, 115.859172),19);
+	map.addLayer(osm);
+}
+initmap();
+</script>
 </body>
 </html>
