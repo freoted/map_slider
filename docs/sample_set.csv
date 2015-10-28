@@ -1,31 +1,31 @@
-Name and business,Street number,startYear,finishYear,Latitude,Longitude
-"Alex Teplitzky, Clother ",196,1912,1913,-31.949501,115.859221
-Ballantyne & Co. Grocers,196,1909,1909,-31.949501,115.859221
-Bookend,179,2013,2015,-31.949601,115.858766
-Butcher,181,1982,1982,-31.949601,115.858766
-"Bernard Maurice, fncy. gds",182,1911,1911,-31.94963,115.859172
-"Edward Baker, Furniture Maker",182,1912,1912,-31.94963,115.859172
-Forster & Bowmann. Contractors & Decorators,182,1908,1909,-31.94963,115.859172
-"Dennis Florias, Oyster Saloon",184,1913,1920,-31.94963,115.859172
-"Evazeles Florias, Oyster Saloon",184,1910,1912,-31.94963,115.859172
-"Florias D F, cafe",184,1929,1930,-31.94963,115.859172
-"Florias O, Oyster Saloon",184,1909,1909,-31.94963,115.859172
-George Black. Oyster Saloon,184,1908,1908,-31.94963,115.859172
-Ceaser & Beel. Confers,188,1908,1908,-31.94963,115.859172
-"Chris Douglas, Fruiterer",190,1912,1912,-31.94963,115.859172
-"Chris Douglas, Fruiterer & Confectioner",190,1913,1913,-31.94963,115.859172
-"George, Jno H, frtr & cnf",190,1930,1930,-31.94963,115.859172
-"Cohen, Saml, tailor",192,1930,1930,-31.94963,115.859172
-"Arthur E. Stephenson, Furniture Dealer",194,1912,1913,-31.94963,115.859172
-Ballantyne & Co. Grocers,194,1909,1909,-31.94963,115.859173
-Echo Company Imported Goods,167,1982,1982,-31.949634,115.858736
-Avala,178,1982,1982,-31.949636,115.859136
-Davies-Franklin Agency (J Turnbull manager),178,1920,1920,-31.949636,115.859136
-Davies-Franklin Cycle Agency. Alfred Craig (manager) ,178,1908,1915,-31.949636,115.859136
-Anna's Coffee Lounge,175,1982,1982,-31.949662,115.858798
-Drycleaner,175,1954,1954,-31.949662,115.858799
-"Clifton Hardware Co., hardware dealers",177,1949,1949,-31.949662,115.8588
-"Army & Navy Stores (Arthur C Macey, manager) Grocers",171,1910,1912,-31.949702,115.85877
-Belle Merzel Florist,171,1982,1982,-31.949702,115.85877
-Exotic Body Piercing,171,2004,2015,-31.949702,115.85877
-Army Surplus Stores,172,1982,1982,-31.949873,115.858961
+Name and business,Street number,startYear,finishYear,Icon,Latitude,Longitude
+"Dennis Florias, Oyster Saloon",184,1913,1920,Bar,-31.94963,115.859172
+"Evazeles Florias, Oyster Saloon",184,1910,1912,Bar,-31.94963,115.859172
+"Florias O, Oyster Saloon",184,1909,1909,Bar,-31.94963,115.859172
+George Black. Oyster Saloon,184,1908,1908,Bar,-31.94963,115.859172
+Davies-Franklin Agency (J Turnbull manager),178,1920,1920,Bike,-31.949636,115.859136
+Davies-Franklin Cycle Agency. Alfred Craig (manager) ,178,1908,1915,Bike,-31.949636,115.859136
+Bookend,179,2013,2015,Book,-31.949601,115.858766
+"Alex Teplitzky, Clother ",196,1912,1913,Clothing,-31.949501,115.859221
+"Cohen, Saml, tailor",192,1930,1930,Clothing,-31.94963,115.859172
+Butcher,181,1982,1982,Fresh food,-31.949601,115.858766
+Ceaser & Beel. Confers,188,1908,1908,Fresh food,-31.94963,115.859172
+"Chris Douglas, Fruiterer",190,1912,1912,Fresh_food,-31.94963,115.859172
+"Chris Douglas, Fruiterer & Confectioner",190,1913,1913,Fresh_food,-31.94963,115.859172
+"George, Jno H, frtr & cnf",190,1930,1930,Fresh_food,-31.94963,115.859172
+Ballantyne & Co. Grocers,194,1909,1909,Fresh_food,-31.94963,115.859173
+"Army & Navy Stores (Arthur C Macey, manager) Grocers",171,1910,1912,Fresh_food,-31.949702,115.85877
+Ballantyne & Co. Grocers,196,1909,1909,Fresh_food,-31.949501,115.859221
+Forster & Bowmann. Contractors & Decorators,182,1908,1909,other,-31.94963,115.859172
+Avala,178,1982,1982,other,-31.949636,115.859136
+"Bernard Maurice, fncy. gds",182,1911,1911,other_retail,-31.94963,115.859172
+"Edward Baker, Furniture Maker",182,1912,1912,other_retail,-31.94963,115.859172
+"Arthur E. Stephenson, Furniture Dealer",194,1912,1913,other_retail,-31.94963,115.859172
+Echo Company Imported Goods,167,1982,1982,other_retail,-31.949634,115.858736
+"Clifton Hardware Co., hardware dealers",177,1949,1949,other_retail,-31.949662,115.8588
+Belle Merzel Florist,171,1982,1982,other_retail,-31.949702,115.85877
+Army Surplus Stores,172,1982,1982,other_retail,-31.949873,115.858961
+"Florias D F, cafe",184,1929,1930,Restaurant,-31.94963,115.859172
+Anna's Coffee Lounge,175,1982,1982,Restaurant,-31.949662,115.858798
+Drycleaner,175,1954,1954,services,-31.949662,115.858799
+Exotic Body Piercing,171,2004,2015,services,-31.949702,115.85877
