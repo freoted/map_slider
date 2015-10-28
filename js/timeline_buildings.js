@@ -1,5 +1,8 @@
 var map;
 
+var myIcon = L.icon({
+iconUrl:"img/Bar.png"});
+
 function initmap() {
 	// set up the map
 	map = new L.Map('map');
@@ -12,14 +15,19 @@ function initmap() {
 	// start the map in Northbridge
 	map.setView(new L.LatLng(-31.949630, 115.859172),19);
 	map.addLayer(osm);
+	
+
 }
+
 function popUpInfo (feature, layer) {
-	layer.bindPopup("<h2>Hi, I'm an info window in Northbridge.</h2><p>" + feature.properties.name_and_business + "</p>");
+	layer.bindPopup(feature.properties.startyear + " - " + feature.properties.finishyear + "<p>" + feature.properties.name_and_business + "</p>");
+	
+	layer.setIcon(myIcon);
 };
 
 initmap();
 
 
-L.geoJson(sample_set, {
+L.geoJson(sample_set1, {
 	onEachFeature: popUpInfo
 }).addTo(map);
