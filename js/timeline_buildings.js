@@ -1,8 +1,5 @@
 var map;
 
-// var myIcon = L.icon({
-// iconUrl:"img/Bar.png"});
-
 function initmap() {
 	// set up the map
 	map = new L.Map('map');
@@ -15,34 +12,26 @@ function initmap() {
 	// start the map in Northbridge
 	map.setView(new L.LatLng(-31.949630, 115.859172),19);
 	map.addLayer(osm);
-	
 
 }
-
-// pointToLayer: function(feature, latlng) {
-   // var smallIcon = L.icon({
-        // iconUrl: "img/" + feature.properties.Icon + '.png'
-   // });
-// return L.marker(latlng, {icon: smallIcon});
-// }
+//function for pop up markers
 function popUpInfo (feature, layer) {
 	layer.bindPopup(feature.properties.startyear + " - " + feature.properties.finishyear + "<p>" + feature.properties.name_and_business + "</p>");
-	
-	// layer.setIcon(myIcon);
 };
-
-
-   
+//function to load custom markers
+function customIcons(feature, latlng) {
+var myIcon = L.icon({
+    iconUrl: "img/" + feature.properties.icon + '.png'
+	});
+return L.marker(latlng, {icon: myIcon});
+};
+	
+//call function to load map   
 initmap();
 
-
+//load geoJson layer - call functions to load current markers and get info to pop ups
 L.geoJson(sample_set1, {
+	pointToLayer: customIcons,
 	onEachFeature: popUpInfo
-	// pointToLayer: function(feature, latlng) {
-	// var myIcon = L.icon({
-		// iconUrl: "img/" + feature.properties.icon + ".png"
-	// )};
-// };
-	
 }).addTo(map);
 
