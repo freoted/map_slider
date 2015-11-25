@@ -1,5 +1,8 @@
 var map;
 
+
+
+	
 function initmap() {
 	// set up the map
 	map = new L.Map('map');
@@ -16,7 +19,7 @@ function initmap() {
 }
 //function for pop up markers
 function popUpInfo (feature, layer) {
-	layer.bindPopup(feature.properties.startyear + " - " + feature.properties.finishyear + "<p>" + feature.properties.name_and_business + "</p>");
+	layer.bindPopup(feature.properties.name_and_business);
 };
 //function to load custom markers
 function customIcons(feature, latlng) {
@@ -30,7 +33,7 @@ return L.marker(latlng, {icon: myIcon});
 initmap();
 
 //load geoJson layer - call functions to load current markers and get info to pop ups
-L.geoJson(sample_set1, {
+L.geoJson(geo_1908, {
 	pointToLayer: customIcons,
 	onEachFeature: popUpInfo
 }).addTo(map);
