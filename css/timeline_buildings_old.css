@@ -51,8 +51,6 @@ a:visited {
 	margin-left: auto;
     margin-right: auto;
 }
-
-
 #text_after_map {
     background-color:white;
     height:500px;
@@ -62,7 +60,6 @@ a:visited {
 	margin-left: auto;
     margin-right: auto;
 }
-
 
 /* Google map div */
  #map {
@@ -77,8 +74,8 @@ a:visited {
 	position: absolute;
 	font-family: 'Noto', serif;
 	height:30px;
-	left: 22%;
-	bottom: -250px;
+	left: 200px;
+	bottom: -280px;
 	font-size:1.2em;			
 }
 
