@@ -49,18 +49,7 @@ var year1908 = L.geoJson(geo_1908, {
 	onEachFeature: popUpInfo
 }); 
 
-//JQuery time!
-// turn the layer on and off with your jWuery
-// if you look at index.html, you will see a DIV that is an on/off button
-/* 
-	if(map.hasLayer(geo_2015)){
-		map.removeLayer(geo_2015);
-	} else {
-		map.addLayer(geo_2015);
-	};
-});
- */
- 
+
 function outputUpdate(vol) {
 	document.querySelector('#volume').value = vol;
 	}
