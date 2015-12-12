@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<!-- Link to external style sheet -->
+<!-- <link rel="stylesheet" type="text/css" href="css/timeline_buildings.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="css/slider_test.css"> -->
+
+<!--Loads jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<title>History of William Street using OpenStreetMap </title>
+</head>
+
+<body>
+<!-- Div to hold the slider -->
+<div id="yearSlider" style="z-index:2";>	
+<form>
+<div align="center">
+<input type="range" min=1 max=10 value=0 id="fader" step=1 oninput="outputUpdate(value)">
+<output for=fader id=volume>1</output> </div>
+</form>
+
+<script src="js/jquery_test.js"></script>
+
+
+<h4>Current Value From Array:&nbsp;
+<input id="lbl_amt" type="text" value="0" class="lbl_amt">
+</h4>
+</body>
+</html>
