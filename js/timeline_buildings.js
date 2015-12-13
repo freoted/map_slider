@@ -49,11 +49,12 @@ var year1908 = L.geoJson(geo_1908, {
 	onEachFeature: popUpInfo
 }); 
 
-var years = [0,1908, 1910, 1912, 1915, 1920, 1935, 1949, 1982, 2005, 2015]
+var years = [0, 1908, 1910, 1912, 1915, 1920, 1935, 1949, 1982, 2005, 2015];
 /* remove this function if you are not updating the output with range number */
-function outputUpdate(random_crap) {
-	document.querySelector('#volume').value = random_crap;
-	}
+function outputUpdate(vol) {
+  document.querySelector('#volume').textContent = vol;
+}
+
 	
 document.getElementById('fader').addEventListener('change', function() {
 

@@ -48,15 +48,13 @@
 </div>
 
 <!-- Div to hold the slider -->
-<div id="yearSlider" style="z-index:2";>	
-<form>
-<div align="center">
-<input type="range" min=1 max=10 value=0 id="fader" step=1 oninput="outputUpdate(years[value])">
-
-<!-- remove this line to get rid of the output line -->
-<output for=fader id=volume>1908</output> 
-</div>
-</form>
+<div id="yearSlider" style="z-index:2" ;>
+  <form>
+    <div align="center">
+      <input type="range" min=1 max=10 value=0 id="fader" step=1 onchange="outputUpdate(years[value])">
+      <span id=volume>1908</span>
+    </div>
+  </form>
 
 <!-- all external scripts-->
 <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
