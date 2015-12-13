@@ -49,23 +49,14 @@ var year1908 = L.geoJson(geo_1908, {
 	onEachFeature: popUpInfo
 }); 
 
-//JQuery time!
-// turn the layer on and off with your jWuery
-// if you look at index.html, you will see a DIV that is an on/off button
-/* 
-	if(map.hasLayer(geo_2015)){
-		map.removeLayer(geo_2015);
-	} else {
-		map.addLayer(geo_2015);
-	};
-});
- */
- 
+var years = [0, 1908, 1910, 1912, 1915, 1920, 1935, 1949, 1982, 2005, 2015];
+/* remove this function if you are not updating the output with range number */
 function outputUpdate(vol) {
-	document.querySelector('#volume').value = vol;
-	}
+  document.querySelector('#volume').textContent = vol;
+}
+
 	
-	document.getElementById('fader').addEventListener('change', function() {
+document.getElementById('fader').addEventListener('change', function() {
 
     date = this.value;
    		if (date == 5) {
