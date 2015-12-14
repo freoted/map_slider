@@ -38,42 +38,125 @@ return L.marker(latlng, {icon: myIcon});
 initmap();
 
 //load geoJson layer - call functions to load current markers and get info to pop ups
-var year2015 = L.geoJson(geo_2015, {
+var year1908 = L.geoJson(geo_1908, {
 	pointToLayer: customIcons,
 	onEachFeature: popUpInfo
 }).addTo(map); 
 
-
-var year1908 = L.geoJson(geo_1908, {
+var year1912 = L.geoJson(geo_1912, {
 	pointToLayer: customIcons,
 	onEachFeature: popUpInfo
 }); 
 
-// make new layer group- trial of two layers only
+var year1915 = L.geoJson(geo_1915, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
 
-var twoLayerGroup = new L.LayerGroup();
-twoLayerGroup.addLayer(year2015);
-twoLayerGroup.addLayer(year1908);
+var year1920 = L.geoJson(geo_1920, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
+var year1930 = L.geoJson(geo_1930, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
+var year1949 = L.geoJson(geo_1949, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
+var year1982 = L.geoJson(geo_1982, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
+var year2005 = L.geoJson(geo_2005, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
+var year2015 = L.geoJson(geo_2015, {
+	pointToLayer: customIcons,
+	onEachFeature: popUpInfo
+}); 
+
 
 // make array of years to pull from by index
-var years = [0, 1908, 1910, 1912, 1915, 1920, 1935, 1949, 1982, 2005, 2015];
+var years = [0, 1908, 1912, 1915, 1920, 1930, 1949, 1982, 2005, 2015];
 
 function outputUpdate(vol) {
   document.querySelector('#volume').textContent = vol;
 }
 
+function removeAllLayers() {
+	map.removeLayer(year1908);
+	map.removeLayer(year1912);
+	map.removeLayer(year1915);
+	map.removeLayer(year1920);
+	map.removeLayer(year1930);
+	map.removeLayer(year1949);
+	map.removeLayer(year1982);
+	map.removeLayer(year2005);
+	map.removeLayer(year2015);
+}
 	
 document.getElementById('fader').addEventListener('change', function() {
 
     date = this.value;
-		//year = 1920
-   		if (date == 5) {
-			map.removeLayer(year2015);
-			map.removeLayer(year1908);
-		}
-		//year = 1912
-		else if (date == 3) {
+		//year = 1908
+   		if (date == 1) {
+			removeAllLayers();
 			map.addLayer(year1908);
 		}
 		
+		//year = 1912
+		else if (date == 2) {
+			removeAllLayers();
+			map.addLayer(year1912);
+		}
+		
+		//year = 1915
+		else if (date == 3) {
+			removeAllLayers();
+			map.addLayer(year1915);
+		}
+		
+		//year = 1920
+		else if (date == 4) {
+			removeAllLayers();
+			map.addLayer(year1920);
+		}
+		
+		//year = 1930
+		else if (date == 5) {
+			removeAllLayers();
+			map.addLayer(year1930);
+		}
+		
+		//year = 1949
+		else if (date == 6) {
+			removeAllLayers();
+			map.addLayer(year1949);
+		}
+		
+		//year = 1982
+		else if (date == 7) {
+			removeAllLayers();
+			map.addLayer(year1982);
+		}		
+		
+		//year = 2005
+		else if (date == 8) {
+			removeAllLayers();
+			map.addLayer(year2005);
+		}	
+		
+		//year = 2015
+		else if (date == 9) {
+			removeAllLayers();
+			map.addLayer(year2015);
+		}			
 	});
