@@ -58,12 +58,12 @@ function outputUpdate(vol) {
 	
 document.getElementById('fader').addEventListener('change', function() {
 
-    date = this.value;
-   		if (date == 5) {
+    date = this.years[value];
+   		if (date == 1912) {
 			map.removeLayer(year2015);
 		}
 		
-		else if (date == 3) {
+		else if (date == 1949) {
 			map.addLayer(year1908);
 		}
 		
