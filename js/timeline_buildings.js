@@ -49,8 +49,15 @@ var year1908 = L.geoJson(geo_1908, {
 	onEachFeature: popUpInfo
 }); 
 
+// make new layer group- trial of two layers only
+
+var twoLayerGroup = new L.LayerGroup();
+twoLayerGroup.addLayer(year2015);
+twoLayerGroup.addLayer(year1908);
+
+// make array of years to pull from by index
 var years = [0, 1908, 1910, 1912, 1915, 1920, 1935, 1949, 1982, 2005, 2015];
-/* remove this function if you are not updating the output with range number */
+
 function outputUpdate(vol) {
   document.querySelector('#volume').textContent = vol;
 }
@@ -58,12 +65,14 @@ function outputUpdate(vol) {
 	
 document.getElementById('fader').addEventListener('change', function() {
 
-    date = this.years[value];
-   		if (date == 1912) {
+    date = this.value;
+		//year = 1920
+   		if (date == 5) {
 			map.removeLayer(year2015);
+			map.removeLayer(year1908);
 		}
-		
-		else if (date == 1949) {
+		//year = 1912
+		else if (date == 3) {
 			map.addLayer(year1908);
 		}
 		
