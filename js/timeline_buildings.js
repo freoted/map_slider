@@ -158,5 +158,6 @@ document.getElementById('fader').addEventListener('change', function() {
 		else if (date == 9) {
 			removeAllLayers();
 			map.addLayer(year2015);
-		}			
+		}		
+		
 	});
