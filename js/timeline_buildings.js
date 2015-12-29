@@ -83,14 +83,9 @@ var year2015 = L.geoJson(geo_2015, {
 	onEachFeature: popUpInfo
 }); 
 
-var geo_testYear = L.geoJson(testYear, {
-	pointToLayer: customIcons,
-	onEachFeature: popUpInfo
-}); 
-
 
 // make array of years to pull from by index
-var years = [0, 1908, 1912, 1915, 1920, 1930, 1949, 1982, 2005, 2015, 2020];
+var years = [0, 1908, 1912, 1915, 1920, 1930, 1949, 1982, 2005, 2015];
 
 function outputUpdate(vol) {
   document.querySelector('#volume').textContent = vol;
@@ -106,7 +101,6 @@ function removeAllLayers() {
 	map.removeLayer(year1982);
 	map.removeLayer(year2005);
 	map.removeLayer(year2015);
-	map.removeLayer(geo_testYear);
 }
 	
 document.getElementById('fader').addEventListener('change', function() {
@@ -166,11 +160,4 @@ document.getElementById('fader').addEventListener('change', function() {
 			map.addLayer(year2015);
 		}
 
-		//year = 2020 (test year)
-		else if (date == 10) {
-			removeAllLayers();
-			map.addLayer(geo_testYear);
-		}
-		
-		
 	});
